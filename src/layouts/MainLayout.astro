@@ -1,0 +1,21 @@
+---
+import '@fontsource-variable/inter';
+import MaxWidthWrapper from "../components/MaxWidthWrapper.astro";
+import Navbar from '../components/Navbar.astro';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nikitas.dev</title>
+  </head>
+  <body class="flex flex-col bg-black text-white select-none">
+    <header>
+      <Navbar />
+    </header>
+    <MaxWidthWrapper>
+      <slot />
+    </MaxWidthWrapper>
+  </body>
+</html>
