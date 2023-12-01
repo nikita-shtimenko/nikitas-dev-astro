@@ -32,11 +32,6 @@ interface INavbarReactProps {
 const Navbar = ({ path }: INavbarReactProps) => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
 
-  // useEffect(() => {
-  //   if (isMobileMenuOpen) document.body.classList.add("overflow-hidden");
-  //   else document.body.classList.remove("overflow-hidden");
-  // }, [isMobileMenuOpen]);
-
   useEffect(() => {
     if (isMobileMenuOpen) {
       document.body.classList.add("overflow-hidden");
