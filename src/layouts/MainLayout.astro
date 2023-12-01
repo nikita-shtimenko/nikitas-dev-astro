@@ -6,7 +6,6 @@ import MaxWidthWrapper from "../components/MaxWidthWrapper.astro";
 import Navbar from '../components/Navbar';
 
 const pathName = Astro.url.pathname;
-console.log(pathName)
 ---
 
 <html lang="en">
@@ -17,7 +16,7 @@ console.log(pathName)
   </head>
   <body class="flex flex-col bg-black text-white select-none">
     <header>
-      <Navbar client:load path={pathName}/>
+      <Navbar client:load pathName={pathName}/>
     </header>
     <MaxWidthWrapper>
       <slot />

@@ -26,10 +26,10 @@ const navItems: INavigationItem[] = [
 ];
 
 interface INavbarReactProps {
-  path: string;
+  pathName: string;
 }
 
-const Navbar = ({ path }: INavbarReactProps) => {
+const Navbar = ({ pathName }: INavbarReactProps) => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
 
   useEffect(() => {
@@ -55,7 +55,7 @@ const Navbar = ({ path }: INavbarReactProps) => {
                 href={item.href}
                 className={cn(
                   "",
-                  item.href === path
+                  item.href === pathName
                     ? "opacity-100"
                     : "opacity-[.35] hover:opacity-70 hover:transition-opacity hover:duration-300"
                 )}
@@ -115,16 +115,11 @@ const Navbar = ({ path }: INavbarReactProps) => {
             href={item.href}
             className={cn(
               "w-full flex flex-row border border-white/[.15] text-center font-light text-5xl rounded-xl px-4 py-2",
-              item.href === path ? "bg-white text-black" : ""
+              item.href === pathName ? "bg-white text-black" : ""
             )}
           >
             {item.name}
           </a>
-          // <div
-          //   key={item.name}
-          //   className="w-full flex flex-row border border-white/[.15] rounded-[32px]"
-          // >
-          // </div>
         ))}
       </div>
     </div>
