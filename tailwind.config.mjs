@@ -7,6 +7,11 @@ export default {
     extend: {
       fontFamily: {
         sans: ["InterVariable", "Inter", ...defaultTheme.fontFamily.sans],
+        pixel: [
+          "Pixelify Sans Variable",
+          "Pixel",
+          ...defaultTheme.fontFamily.sans,
+        ],
       },
     },
   },

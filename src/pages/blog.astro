@@ -4,6 +4,24 @@ import MainLayout from "../layouts/MainLayout.astro";
 
 <MainLayout currentPath="">
 	<main class="h-screen w-full flex flex-row justify-center items-center text-center">
-		<h1 class="font-light text-8xl">coming soon...</h1>
+		<div id="typed-strings">
+			<p>coming soon...</p>
+			<p>???</p>
+		</div>
+		<span id="typed" class="font-pixel font-normal text-5xl lg:text-8xl"></span>
 	</main>
 </MainLayout>
+
+<script>
+	import Typed from "typed.js";
+
+	let typed = new Typed('#typed', {
+		stringsElement: '#typed-strings',
+		typeSpeed: 100,
+		backSpeed: 100,
+		backDelay: 900,
+		showCursor: false,
+		loop: true,
+		loopCount: Infinity,
+	});
+</script>

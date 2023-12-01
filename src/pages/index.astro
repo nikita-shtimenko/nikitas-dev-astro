@@ -4,7 +4,9 @@ import MainLayout from "../layouts/MainLayout.astro";
 
 <MainLayout>
 	<main class="w-full flex flex-col items-center font-light text-center text-sm border border-white/[.15] rounded-[32px] mt-24">
-		<p class="font-extralight pt-8">( HOME )</p>
+		<p class="font-extralight text-md pt-8">
+			( <span class="font-pixel">HOME</span> )
+		</p>
 		<div class="flex flex-col text-6xl lg:text-8xl mt-16">
 			<h1>Nikita</h1>
 			<h2>Shtimenko</h2>
@@ -17,68 +19,3 @@ import MainLayout from "../layouts/MainLayout.astro";
 		</div>
 	</main>
 </MainLayout>
-
-<!-- <style>
-	.hand-wave {
-		animation-name: hand-wave-animation;
-    animation-duration: 2.5s;
-    animation-iteration-count: infinite;
-    transform-origin: 70% 70%;
-    display: inline-block;
-		margin-left: 0.5rem;
-	}
-
-	@keyframes hand-wave-animation {
-		0% {
-    	transform: rotate(0deg);
-		}
-
-		10% {
-    	transform: rotate(14deg);
-		}
-
-		20% {
-    	transform: rotate(-8deg);
-		}
-
-		30% {
-    	transform: rotate(14deg);
-		}
-
-		40% {
-    	transform: rotate(-4deg);
-		}
-
-		50% {
-    	transform: rotate(10deg);
-		}
-
-		60% {
-    	transform: rotate(0deg);
-		}
-
-		100% {
-    	transform: rotate(0deg);
-		}
-	}
-
-	.line-wave {
-		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='4' viewBox='0 0 16 4'%3E%3Cpath d='M0,3.5c4,0,4-3,8-3s4,3,8,3' fill='none' stroke='%23ff6204' opacity='1' stroke-miterlimit='20'/%3E%3C/svg%3E");
-		background-repeat: repeat-x;
-    background-position: 0 100%;
-    transition: .2s;
-    background-size: 16px 4px;
-    animation: line-wave-animation .4s linear infinite;
-    padding: 0 0 0.2rem;
-	}
-
-	@keyframes line-wave-animation {
-		0% {
-			background-position: 0 100%;
-		}
-
-		100% {
-			background-position: 16px 100%;
-		}
-	}
-</style> -->

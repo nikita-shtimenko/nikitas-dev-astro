@@ -1,7 +1,11 @@
 ---
 import '@fontsource-variable/inter';
+import '@fontsource-variable/pixelify-sans'
+
 import MaxWidthWrapper from "../components/MaxWidthWrapper.astro";
-import Navbar from '../components/Navbar.astro';
+import Navbar from '../components/Navbar';
+
+const pathName = Astro.url.pathname;
 ---
 
 <html lang="en">
@@ -12,7 +16,7 @@ import Navbar from '../components/Navbar.astro';
   </head>
   <body class="flex flex-col bg-black text-white select-none">
     <header>
-      <Navbar />
+      <Navbar client:load path={pathName}/>
     </header>
     <MaxWidthWrapper>
       <slot />
