@@ -48,7 +48,7 @@ const Navbar = ({ pathName }: INavbarReactProps) => {
             <p className="text-md lg:text-sm">Nikita Shtimenko</p>
             <p className="text-sm lg:text-xs opacity-50">Israel/Ukraine</p>
           </div>
-          <div className="hidden lg:flex flex-row gap-x-1 font-light justify-center items-center text-md">
+          <div className="hidden lg:flex flex-row gap-x-2 font-light justify-center items-center text-md">
             {navItems.map((item) => (
               <a
                 key={item.name}
